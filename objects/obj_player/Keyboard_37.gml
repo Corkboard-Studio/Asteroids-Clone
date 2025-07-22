@@ -1,4 +1,7 @@
 // Rotate left, positive rotation
 
-direction += turn_speed/2;
-image_angle += turn_speed/2;
+if not use_mouse_steering
+{
+    direction += turn_speed/2;
+    image_angle += turn_speed/2;
+}
