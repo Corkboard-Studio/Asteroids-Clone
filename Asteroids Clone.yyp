@@ -35,7 +35,13 @@
   },
   "name":"Asteroids Clone",
   "resources":[
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_asteroid_lg","path":"sprites/spr_asteroid_lg/spr_asteroid_lg.yy",},},
+    {"id":{"name":"spr_asteroid_md","path":"sprites/spr_asteroid_md/spr_asteroid_md.yy",},},
+    {"id":{"name":"spr_asteroid_sm","path":"sprites/spr_asteroid_sm/spr_asteroid_sm.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
