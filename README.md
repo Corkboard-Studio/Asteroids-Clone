@@ -7,4 +7,6 @@ While there are many shorter tutorials available, I've chosen to follow the comp
 
 This project will serve as my foundation for top-down movement, object management, and core game loop structure in GameMaker. 
 
+Background art by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2742113">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2742113">Pixabay</a>
+
 Thank you for following along on this first step of the journey!
