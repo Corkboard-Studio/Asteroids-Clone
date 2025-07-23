@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spark",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_player_sonic_laser",
+  "eventList":[],
   "managed":true,
-  "name":"obj_spark",
+  "name":"obj_player_sonic_laser",
   "overriddenProperties":[],
   "parent":{
-    "name":"Effects",
-    "path":"folders/Objects/Effects.yy",
+    "name":"Player Projectiles",
+    "path":"folders/Objects/Player Projectiles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_spark",
-    "path":"sprites/spr_spark/spr_spark.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
