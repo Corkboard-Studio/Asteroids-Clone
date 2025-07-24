@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_sonic_laser",
+  "%Name":"obj_player_vulcan",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player_sonic_laser",
+  "name":"obj_player_vulcan",
   "overriddenProperties":[],
   "parent":{
     "name":"Player Projectiles",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_sonic_laser",
-    "path":"sprites/spr_player_sonic_laser/spr_player_sonic_laser.yy",
+    "name":"spr_player_vulcan",
+    "path":"sprites/spr_player_vulcan/spr_player_vulcan.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -3,7 +3,7 @@
 /// @param {Bool} _right The state of the right key
 /// @param {Bool} _up The state of the up key
 /// @param {Bool} _down The state of the down key 
-/// 
+/// @return {Id.Instance} The player
 function player_movement(_left, _right, _up, _down){
     var h_input = _left - _right;
     var v_input = _up - _down;
