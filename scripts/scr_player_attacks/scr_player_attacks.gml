@@ -33,22 +33,25 @@ function player_attack(_primary_attack)
     var pulse_laser_speed = 14 + (speed * 0.5);
     var pulse_laser_damage = 10;
     var pulse_laser_duration = 45;
+    var pulse_laser_energy_cost = 12;
     
     // sonic laser
     var sonic_laser_cd = 16;
     var sonic_laser_speed = 15 + (speed * 0.5);
     var sonic_laser_damage = 8;
     var sonic_laser_duration = 30;
+    var sonic_laser_energy_cost = 16;
     
     // vulcan laser
     var vulcan_laser_cd = 6;
     var vulcan_laser_speed = 22 + (speed * 0.5);
     var vulcan_laser_damage = 4;
     var vulcan_laser_duration = 30;
+    var vulcan_laser_energy_cost = 8;
     
     if (_primary_attack and cooldown_primary <= 0)
     {
-        if (current_weapon == 1)
+        if (current_weapon == 1 and energy >= pulse_laser_energy_cost)
         {
             // spawn new laser
             var x_offset = 60; // shifts the spawn location forward
@@ -59,11 +62,16 @@ function player_attack(_primary_attack)
             
             cooldown_primary = pulse_laser_cd
             
+            // Decrease energy
+            energy -= pulse_laser_energy_cost;
+            energy_regen_rate = 0.3;
+            energy_regen_cooldown = pulse_laser_cd * 4;
+            
             // play sound
             audio_play_sound(snd_laser01,1,false);
             
         } // end if current weapon is 1
-        else if (current_weapon == 2)
+        else if (current_weapon == 2 and energy >= sonic_laser_energy_cost)
         {
             // spawn new lasers
             var variation = 15; // amount of spread in the angle between each laser
@@ -83,11 +91,16 @@ function player_attack(_primary_attack)
             
             cooldown_primary = sonic_laser_cd
             
+            // Decrease energy
+            energy -= sonic_laser_energy_cost;
+            energy_regen_rate = 0.3;
+            energy_regen_cooldown = sonic_laser_cd * 4;
+            
             // play sound
             audio_play_sound(snd_laser02,1,false);
             
         } // end if current weapon is 2
-        else if (current_weapon == 3)
+        else if (current_weapon == 3 and energy >= vulcan_laser_energy_cost)
         {
             // spawn new lasers
             var x_offset = 18; // shifts the spawn location forward
@@ -102,6 +115,11 @@ function player_attack(_primary_attack)
             laser2.exist_duration = vulcan_laser_duration;
             
             cooldown_primary = vulcan_laser_cd;
+            
+            // Decrease energy
+            energy -= vulcan_laser_energy_cost;
+            energy_regen_rate = 0.3;
+            energy_regen_cooldown = vulcan_laser_cd * 4;
             
             // play sound
             audio_play_sound(snd_laser04,1,false);
