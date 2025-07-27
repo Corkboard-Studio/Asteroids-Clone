@@ -2,6 +2,6 @@
 event_inherited();
 
 // override these from parent
-damage = 10;
+damage = 4;
 exist_duration = 45;
-effect_color = #0345fc; //blue
+effect_color = #f7f18d; //yellow
