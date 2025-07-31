@@ -53,6 +53,7 @@ var weapons_list = [spr_player_pulse_laser, spr_player_sonic_laser, spr_player_v
 // Select the Font
 draw_set_font(fnt_weapons_ui);
 draw_set_color(c_white);
+draw_set_halign(fa_left);
 
 // Loop through each weapon
 for (var weapon = 0; weapon < array_length(weapons_list); weapon++)
@@ -71,4 +72,54 @@ for (var weapon = 0; weapon < array_length(weapons_list); weapon++)
     
     // Draw text
     draw_text(x_pos_weapon+x_spacing*weapon+26,y_pos_weapon+22,string(weapon+1));
+}
+
+
+// Score UI with Text
+var score_xpos = 10;
+var score_ypos = room_height - 100;
+
+draw_set_font(fnt_text_ui);
+draw_set_color(c_lime);
+draw_set_halign(fa_left);
+draw_text(score_xpos, score_ypos, "SCORE: " + string(global.score));
+
+// Show lives with Icons
+draw_text(score_xpos, score_ypos+45,"LIVES: ")
+for (var i = 0; i < global.lives; i++)
+{
+    draw_sprite(spr_lives_icon,0, score_xpos+90+i*36,score_ypos+45);
+}
+
+// Show Current Level
+var level_xpos = room_width - 10;
+var level_ypos = score_ypos+45;
+draw_set_halign(fa_right);
+draw_text(level_xpos, level_ypos, "LEVEL: " + string(global.level));
+
+// Current Asteroid Count
+var asteroid_count = instance_number(obj_parent_asteroid);
+
+if (asteroid_count > 0)
+{
+    draw_text(level_xpos,level_ypos - 45,"Asteroids: " + string(asteroid_count));
+}
+else 
+{
+	draw_text(level_xpos,level_ypos - 45,"Transferring to Next Zone!");
+}
+
+
+// GAME OVER
+if (global.gameover)
+{
+    draw_set_font(fnt_game);
+    draw_set_color(c_red);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(room_width/2,room_height/2,"GAME OVER");
+    draw_text(room_width/2,room_height/2+60,"press R to restart");
+    
+    // reset back to default vertical alignment
+    draw_set_valign(fa_top);
 }

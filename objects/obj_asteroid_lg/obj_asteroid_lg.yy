@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"obj_asteroid_lg",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_asteroid","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"propertyId":{"name":"score_value","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"200",},
+  ],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Enemies.yy",

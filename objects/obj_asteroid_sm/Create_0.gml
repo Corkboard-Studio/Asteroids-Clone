@@ -3,7 +3,7 @@ event_inherited();
 
 // Select random sprite
 is_lg_asteroid = false;
-effect_scale = 0.7;
+effect_scale = 0.5;
 sprite_index = choose(spr_asteroid_sm_a,spr_asteroid_sm_b,spr_asteroid_sm_c,spr_asteroid_sm_e,spr_asteroid_sm_e);
 
 if (sprite_index == spr_asteroid_sm_a)

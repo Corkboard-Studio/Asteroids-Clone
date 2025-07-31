@@ -12,7 +12,6 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_asteroid","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"propertyId":{"name":"current_hp","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_asteroid","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"propertyId":{"name":"initial_max_velocity","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_asteroid","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"propertyId":{"name":"initial_min_velocity","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2.5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_asteroid","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"propertyId":{"name":"score_value","path":"objects/obj_parent_asteroid/obj_parent_asteroid.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
   ],
   "parent":{
     "name":"Enemies",

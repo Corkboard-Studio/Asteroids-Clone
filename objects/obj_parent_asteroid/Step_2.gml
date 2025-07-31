@@ -36,6 +36,9 @@ if current_hp <= 0
     // could have set up sound file in a variable so sm/lg asteroids sound different when explode
     audio_play_sound(snd_asteroid_explosion,1,false); 
     
+    // Add score to global score
+    global.score += score_value;
+    
     instance_destroy();
     
     // If need to spawn new asteroids, spawn them

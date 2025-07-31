@@ -1,2 +1,5 @@
 /// @description Restarts the game
-game_restart();
+if (global.gameover == true)
+{
+    game_restart();
+}
