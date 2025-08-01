@@ -22,7 +22,7 @@ energy += (energy_regen * energy_regen_rate);
 energy = min(energy, energy_max);
 
 // Invulnerability Cooldown
-if (invulnerable_timer > 0)
+if (invulnerable_timer > 0 and room != 0)
 {
     // visual feedback with transparency and color that invulnerable
     image_alpha = 0.4

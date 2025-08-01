@@ -17,6 +17,6 @@ if (level_cleared)
 // load next level
 if (timer <= 0 and level_cleared)
 {
-    room_goto(global.level % 3);
+    room_goto(room_list[global.level % 3]);
     global.level++;
 }

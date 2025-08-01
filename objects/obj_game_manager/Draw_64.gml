@@ -40,7 +40,7 @@ if (instance_exists(obj_player))
     // Get reference to the player
     var player_instance = instance_find(obj_player,0);
     
-    current_weapon = player_instance.current_weapon;
+    current_weapon = global.current_weapon;
 }
 
 // Define the location of the weapon box

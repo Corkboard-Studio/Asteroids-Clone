@@ -5,7 +5,6 @@ acceleration = 0.5;
 deceleration = 0.2;
 use_mouse_steering = true; // set to true to use mouse steering instead of arrows
 cooldown_primary = 0;
-current_weapon = 1;
 
 energy_max = 100;
 energy = energy_max;

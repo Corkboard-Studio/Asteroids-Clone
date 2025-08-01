@@ -1,17 +1,17 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Room3",
+  "%Name":"rm_03",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_29BC6089_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_79C3885A_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_4AE4E970_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_8A2B005_1","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_31C5EC68","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_6CFADD5F","path":"rooms/Room3/Room3.yy",},
+    {"name":"inst_29BC6089_1","path":"rooms/rm_03/rm_03.yy",},
+    {"name":"inst_79C3885A_1","path":"rooms/rm_03/rm_03.yy",},
+    {"name":"inst_4AE4E970_1","path":"rooms/rm_03/rm_03.yy",},
+    {"name":"inst_8A2B005_1","path":"rooms/rm_03/rm_03.yy",},
+    {"name":"inst_31C5EC68","path":"rooms/rm_03/rm_03.yy",},
+    {"name":"inst_6CFADD5F","path":"rooms/rm_03/rm_03.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,7 +29,7 @@
         {"name":"g_ContrastBrightness","type":0,"value":"0.8",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"bg_space03","path":"sprites/bg_space03/bg_space03.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Room3",
+  "name":"rm_03",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",

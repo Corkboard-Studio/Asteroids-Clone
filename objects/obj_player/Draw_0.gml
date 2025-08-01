@@ -1,6 +1,7 @@
 draw_self(); // A Draw event removes the automatic drawing of the player sprite, so manually have to draw_self
 
-if (invulnerable_timer > 0)
+// draw invulnerable timer
+if (invulnerable_timer > 0 and room != 0)
 {
     var invulnerable_ratio = invulnerable_timer / invulnerable_timer_max;
     var full_state_bar_width = sprite_get_width(spr_ui_state_bar);

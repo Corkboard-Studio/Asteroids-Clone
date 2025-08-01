@@ -9,15 +9,15 @@ if (keyboard_check_pressed(ord("M")))
 // check weapon selection
 if (keyboard_check_pressed(ord("1")))
 {
-    current_weapon = 1;
+    global.current_weapon = 1;
 }
 if (keyboard_check_pressed(ord("2")))
 {
-    current_weapon = 2;
+    global.current_weapon = 2;
 }
 if (keyboard_check_pressed(ord("3")))
 {
-    current_weapon = 3;
+    global.current_weapon = 3;
 }
 
 // checks for movement keys being pressed
@@ -27,8 +27,9 @@ var up = keyboard_check(vk_up) or keyboard_check(ord("W"));
 var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 
 var primary_attack = keyboard_check(vk_space) or mouse_check_button(mb_left); //space or left click on mouse
+    
+// player attacks
+player_attack(primary_attack);
 
 player_movement(left, right, up, down);
 
-// player attacks
-player_attack(primary_attack);

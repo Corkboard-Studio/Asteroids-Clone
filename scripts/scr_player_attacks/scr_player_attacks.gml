@@ -51,7 +51,7 @@ function player_attack(_primary_attack)
     
     if (_primary_attack and cooldown_primary <= 0)
     {
-        if (current_weapon == 1 and energy >= pulse_laser_energy_cost)
+        if (global.current_weapon == 1 and energy >= pulse_laser_energy_cost)
         {
             // spawn new laser
             var x_offset = 60; // shifts the spawn location forward
@@ -71,7 +71,7 @@ function player_attack(_primary_attack)
             audio_play_sound(snd_laser01,1,false);
             
         } // end if current weapon is 1
-        else if (current_weapon == 2 and energy >= sonic_laser_energy_cost)
+        else if (global.current_weapon == 2 and energy >= sonic_laser_energy_cost)
         {
             // spawn new lasers
             var variation = 15; // amount of spread in the angle between each laser
@@ -100,7 +100,7 @@ function player_attack(_primary_attack)
             audio_play_sound(snd_laser02,1,false);
             
         } // end if current weapon is 2
-        else if (current_weapon == 3 and energy >= vulcan_laser_energy_cost)
+        else if (global.current_weapon == 3 and energy >= vulcan_laser_energy_cost)
         {
             // spawn new lasers
             var x_offset = 18; // shifts the spawn location forward
